@@ -1,10 +1,18 @@
+import { useState } from 'react';
 import './App.css';
-import WebcamCapture from './WebcamCapture';
+import ShowText from './components/ShowText';
+import WebContainer from "./styledComponents/WebContainer"
+import Form from './components/Form';
 function App() {
+
+  const [textImage, setTextImage] = useState(null)
 
   return (
     <div className="App">
-      <WebcamCapture/>
+      <WebContainer>
+        <Form />
+        <ShowText textImage={textImage}/>
+      </WebContainer>
     </div>
   );
 }
