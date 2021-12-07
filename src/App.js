@@ -10,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <WebContainer>
+        <h1 className="text-3xl mb-4">Obten el texto de tu imagen</h1>
         <Form />
         <ShowText textImage={textImage}/>
       </WebContainer>
